@@ -1,0 +1,5 @@
+int main ():
+    string saluda = 'Saludos desde una variable';
+    int number = 2;
+    println(saluda);
+    println(number);
