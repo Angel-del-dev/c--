@@ -1,5 +1,5 @@
 int main ():
-    string saluda = 'Saludos desde una variable';
+    string greet = 'Greetings from a variable';
     int number = 2;
-    println(saluda);
+    println(greet);
     println(number);
