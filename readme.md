@@ -9,6 +9,9 @@ code blocks, instead it looks for indentation
 just like python.
 Every operation must end with ;
 
+Every file must have one main function, which
+will be the first function to be invoked
+
 ```
 int main():
     /*
