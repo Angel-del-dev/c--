@@ -1,3 +1,5 @@
+![c-- Logo](c--logo.png)
+
 # C--
 This is not a serious language and its being developed
 as my final project in my Vlang roadmap
