@@ -1,4 +1,4 @@
-![c-- Logo](c--logo.png)
+<img src="logo.png" style="width: 600px; height: 600px;" />
 
 # C--
 This is not a serious language and its being developed
