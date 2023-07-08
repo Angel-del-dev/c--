@@ -29,6 +29,7 @@ int main():
 * Variables:
   * int number = 2;
     * 'type name = value'
+  * Variable reasignation
 * Built-in-functions
   * print
     * Prints directly

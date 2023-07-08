@@ -10,6 +10,7 @@ pub struct Custom_variable {
 fn print_normal(value string, bl Block) (int, string){
 	mut end_value := value
 	if value.split(' ').len == 1 { end_value = bl.variables[value].value }
+	end_value = end_value.replace('"', '').replace("'", '')
 	print(end_value)
 	return 0, ''
 }
@@ -17,6 +18,7 @@ fn print_normal(value string, bl Block) (int, string){
 fn print_line(value string, bl Block) (int, string) {
 	mut end_value := value
 	if value.split(' ').len == 1 { end_value = bl.variables[value].value }
+	end_value = end_value.replace('"', '').replace("'", '')
 	print('${end_value}\n')
 	return 0, ''
 }

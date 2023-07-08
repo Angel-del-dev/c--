@@ -1,0 +1,4 @@
+int main ():
+    string var = 'Value';
+    vart = 'New value';
+    println(var)

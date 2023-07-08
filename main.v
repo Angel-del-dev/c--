@@ -11,6 +11,14 @@ fn create_assignation(mut bl Block, instruction string) (int, string) {
 	instruction_array := instruction.trim(' ').split('=')
 	definition:= instruction_array[0].trim(' ').split(' ')
 	value := instruction_array[1].trim(' ')
+	if definition.len < 2 {
+		if bl.variables.keys().contains(definition[0]) {
+			bl.variables[definition[0]].value = value
+			return 0, ''
+
+		}
+		return 1, 'Variable "${definition[0]}" does not exist'
+	}
 	bl.variables[definition[1]] = Custom_variable {
 		name: definition[1],
 		variable_type: definition[0]
@@ -22,8 +30,8 @@ fn create_assignation(mut bl Block, instruction string) (int, string) {
 fn call_custom_fn(bl Block, instruction string) (int, string){
 	instruction_array := instruction.replace(')', '').split('(')
 	function := instruction_array[0].replace(' ', '')
-	value := instruction_array[1].replace('"', '').replace("'", '')
-
+	// value := instruction_array[1].replace('"', '').replace("'", '')
+	value := instruction_array[1]
 	code, msg := check_if_method_exists(function, bl, value)
 	return code, msg
 }
