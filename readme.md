@@ -1,4 +1,6 @@
-<img src="logo.png" style="width: 600px; height: 600px;" />
+<div style="display: flex; justify-content: center;">
+  <img src="logo.png" style="width: 600px; height: 600px;" />
+</div>
 
 # C--
 This is not a serious language and its being developed
